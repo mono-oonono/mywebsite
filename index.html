@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/x-icon" href="assets/profile.jpg">
     <title>homepage</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectInstagram(){
+            window.location.href="https://www.instagram.com/mono.oonono?igsh=MTI1c21sNndrYWZ0Yg%3D%3D";
+        }
+    </script>
 </head>
 <body>
     <div id="banner">
@@ -10,18 +16,39 @@
         <div id="banner-image"></div>
     </div>
     <div id="navigation-bar">
-        <button class="navigation-bar-button">home</button>
-        <button class="navigation-bar-button">links</button>
-        <button class="navigation-bar-button">about me</button>
-        <form>
-            <input class="navigation-bar-button" type="search" placeholder="search for something">
-            <button class="navigation-bar-button">search</button>
-        </form>
+        <button class="navigation-bar-button" onclick="redirectInstagram()" type="submit">instagram</button>
+        <div id="search-bar">
+            <form>
+                <input class="navigation-bar-button" type="search" placeholder="search for something..." style="width:320px">
+                <button class="navigation-bar-button">search</button>
+            </form>
+        </div>
+        
     </div>
     <div id="content">
-        <div id="profile"></div>
-        <div id="main-content"></div>
+        <div id="profile"><img id="profile-image" src="assets/profile.jpg"></div>
+        <div id="main-content">
+            <div id="introduction">
+                <p style="font-size:24px;">
+                    hi! i'm mono, or piki. whichever you may prefer.<br>
+                    I'm an illustrator, developer, writer based in india and I..
+                    <ul>
+                        <li>do frontend development</li>
+                        <li>create hand drawn illustrations</li>
+                        <li>write about things</li>
+                    </ul>
+                    I also like doing other things, a lot of things in my free time.. such as..
+                    <ul>
+                        <li>playing video games</li>
+                        <li>listening to music</li>
+                        <li>game development</li>
+                    </ul>
+                    I also like world building and stuff.. heh..    
+                </p>
+            </div>
+        </div>
         <div id="side-panel"></div>
     </div>
+    
 </body>
 </html>
