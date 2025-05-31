@@ -1,5 +1,5 @@
 body{
-    background-color: #BBFFB5;
+    background-image: url("assets/background.jpg");
     font-size: 20px;
 
 }
@@ -10,21 +10,26 @@ body{
     justify-content: center;
 }
 #banner-tag{
-    background-color: #B4AFFF;
+    background-color: #FF6B6B;
     height:200px; width: 20vh;
     border-radius: 1rem;
-    box-shadow: 10px 10px #5c5cc7;
+    box-shadow: 10px 10px #f15050;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size: 80px; font-weight: bold;
+    text-align: center;
+    
 }
-#banner-image{
+.banner-image{
     background-color: #FFA4DF;
-    height:200px; width: 80vh;
+    height:200px; width: 70vh;
     border-radius: 1rem;
     box-shadow: 10px 10px #cc5f95;
 
 }
 
 #navigation-bar{
-    background-color: #FFA4DF;
+    background-image: linear-gradient(to right, #c6ea8d, #fe90af);
     padding: 8px; margin:10px;
     border-radius: 1rem;
     box-shadow: 10px 10px #cc5f95;
@@ -67,7 +72,7 @@ body{
 }
 
 #main-content{
-    background-color: #FFA4DF;
+    background-image: linear-gradient(#ea8d8d, #a890fe);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     height: 80vh; width: 60vh;
@@ -77,15 +82,14 @@ body{
 }
 
 #introduction{
-    color:white;
-    background-color:#cc5f95;
+    color:#FFFFFF;
     padding: 8px; margin: 1px;
     border: solid 0cm; border-radius: 1rem;
 
 }
 
 #side-panel{
-    background-color: #FFA4DF;
+    background-image: linear-gradient(#ea8d8d, #a890fe);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     height: 80vh; width: 240px;
