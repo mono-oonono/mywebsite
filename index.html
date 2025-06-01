@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/x-icon" href="assets/profile.jpg">
     <title>homepage</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function redirectInstagram(){
-            window.location.href="https://www.instagram.com/mono.oonono?igsh=MTI1c21sNndrYWZ0Yg%3D%3D";
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="banner">
@@ -32,28 +32,57 @@
     </div>
     <div id="content">
         <div id="profile"><img id="profile-image" src="assets/profile.jpg"></div>
-        <div id="main-content">
-            <div id="introduction">
-                <p style="font-size:24px;">
-                    hi! i'm mono, or piki. whichever you may prefer.<br>
-                    I'm an illustrator, developer, writer based in india and I..
-                    <ul>
-                        <li>do frontend development</li>
-                        <li>create hand drawn illustrations</li>
-                        <li>write about things</li>
-                    </ul>
-                    I also like doing other things, a lot of things in my free time.. such as..
-                    <ul>
-                        <li>playing video games</li>
-                        <li>listening to music</li>
-                        <li>game development</li>
-                    </ul>
-                    I also like world building and stuff.. heh..    
-                </p>
-            </div>
+        <div id="profile-things">
+         <div id="introduction-container">
+            <div class="introduction">
+                <p style="font-size:32px;">HELLO!</p>
+                    <p style="font-size:20px;">
+                        i'm mono, or piki. whichever you may prefer.<br>
+                        I'm an artist, developer, writer based in india and I..
+                        <ul>
+                            <li>do frontend development</li>
+                            <li>create hand drawn art</li>
+                            <li>write about things</li>
+                        </ul>
+                        I also like doing other things, a lot of things in my free time.. such as..
+                        <ul>
+                            <li>playing video games</li>
+                            <li>listening to music</li>
+                            <li>game development</li>
+                        </ul>
+                        I also like world building and stuff.. heh..    
+                    </p>
+                    <p>
+                        i completed my high school in 2025 and i am currently working as a freelance artist and developer. 
+                        for further questions.. please feel free to contact me at <a href="mailto:adityakumar00pa00@gmail.com">here</a>
+                    </p>
+                    <p style="font-size:32px;">add me on socials</p>
+                    <p>
+                        <button class="navigation-bar-button">discord-mono.oonono</button>
+                    </p>
+                    </div>
+                    <div class="introduction">
+                    </div>
+                </div>
         </div>
-        <div id="side-panel"></div>
+        <div id="side-panel">
+            <p>
+                TOOLS:
+            </p>
+            <button class="side-panel-button">krita</button>
+            <button class="side-panel-button">visual studio code</button>
+            <button class="side-panel-button">libresprite</button>
+            <button class="side-panel-button">figma</button>
+            <button class="side-panel-button">notion</button>
+             <p>
+                DEVELOPMENT TOOLS:
+            </p>
+            <button class="side-panel-button">python</button>
+            <button class="side-panel-button">django</button>
+            <button class="side-panel-button">html</button>
+            <button class="side-panel-button">css</button>
+            <button class="side-panel-button">javascript</button>
+        </div>
     </div>
-    
 </body>
 </html>
