@@ -105,6 +105,7 @@ body{
     flex-wrap: wrap; /* Ensure items wrap if they can't fit */
     /* You might want to adjust other properties for mobile */
     gap: 10px; /* Adjust gap for vertical stacking */
+    padding: 8px; margin: 10px;
   }
 
   .introduction {
