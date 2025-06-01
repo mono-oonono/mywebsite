@@ -99,87 +99,6 @@ body{
     flex:1;
     flex-wrap:wrap;
 }
-@media (max-width: 768px) {
-            body {
-                font-size: 16px; /* Smaller base font size */
-            }
-
-            #banner-tag {
-                font-size: 40px; /* Even smaller font for banner tag */
-                height: 120px;
-                box-shadow: 5px 5px #f15050; /* Smaller shadow */
-            }
-
-            .banner-image {
-                height: 100px;
-                box-shadow: 5px 5px #cc5f95; /* Smaller shadow */
-            }
-
-            #navigation-bar {
-                padding: 5px;
-                margin: 5px;
-                box-shadow: 5px 5px #cc5f95;
-            }
-
-            .navigation-bar-button {
-                font-size: 14px; /* Smaller button font */
-                padding: 6px 10px;
-            }
-
-            #search-bar input, #search-bar button {
-                font-size: 14px;
-                padding: 6px;
-            }
-
-            #content {
-                margin: 5px;
-            }
-
-            #profile {
-                width: 98%; /* Take almost full width */
-                padding: 10px;
-                flex-direction: column; /* Stack image and text vertically again */
-                align-items: center;
-                text-align: center;
-            }
-
-            #profile-image {
-                width: 70px; /* Smaller image */
-                height: 70px;
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            #profile-things {
-                align-items: center; /* Center text */
-                text-align: center;
-            }
-
-            #main-content {
-                font-size: 18px; /* Slightly smaller font for main content */
-                padding: 15px;
-                margin: 5px auto;
-            }
-
-            .introduction {
-                font-size: 16px;
-                padding: 10px;
-                margin: 5px auto;
-            }
-
-            #side-panel {
-                padding: 10px;
-                margin: 5px auto;
-            }
-
-            .side-panel-button {
-                font-size: 14px;
-                padding: 8px 10px;
-                margin: 6px 0;
-            }
-        }
-
-    
 #side-panel{
     background-image: linear-gradient(#ea8d8d, #a890fe);
     font-family:quicksand;
@@ -198,3 +117,210 @@ body{
 .side-panel-button:hover{
     background-color:#9fb98b;
 }
+
+
+@media (max-width: 1024px) {
+            #banner {
+                flex-direction: column; /* Stack banner items */
+                gap: 15px;
+            }
+
+            #banner-tag, .banner-image {
+                width: 90%; /* Take more width */
+                min-width: unset; /* Remove min-width restriction */
+            }
+
+            #banner-tag {
+                font-size: 60px; /* Adjust font size */
+                height: 150px;
+            }
+
+            .banner-image {
+                height: 150px;
+            }
+
+            #navigation-bar {
+                flex-direction: column; /* Stack navigation items */
+                align-items: stretch; /* Make buttons full width */
+                gap: 8px;
+            }
+
+            .navigation-bar-button {
+                width: 100%; /* Full width buttons */
+                margin: 5px 0; /* Adjust margin */
+            }
+
+            #search-bar {
+                margin-left: 0; /* Remove auto margin */
+                width: 100%; /* Full width search bar */
+                justify-content: center; /* Center search input */
+                margin-top: 10px; /* Add space from buttons */
+            }
+
+            #content {
+                flex-direction: column; /* Stack main content sections */
+                align-items: center; /* Center stacked sections */
+            }
+
+            #profile, #main-content, #side-panel {
+                width: 95%; /* Take almost full width */
+                margin: 10px auto; /* Center horizontally */
+                min-width: unset;
+            }
+
+            #profile {
+                height: auto; /* Auto height for profile */
+                flex-direction: row; /* Keep image and text side-by-side */
+                justify-content: flex-start;
+                padding: 15px;
+            }
+
+            #profile-image {
+                width: 100px; /* Slightly larger image for tablet */
+                height: 100px;
+                margin-right: 15px;
+                margin-bottom: 0;
+            }
+
+            #profile-things {
+                align-items: flex-start; /* Align text to start */
+                text-align: left;
+            }
+
+            #side-panel {
+                height: auto; /* Auto height for side panel */
+                min-height: 200px; /* Ensure some height */
+                padding: 15px;
+            }
+
+            .side-panel-button {
+                width: 95%; /* Adjust button width */
+            }
+
+            #introduction-container {
+                flex-direction: column; /* Stack introduction boxes */
+                align-items: center;
+            }
+
+            .introduction {
+                width: 95%; /* Full width for intro boxes */
+                margin: 10px auto;
+            }
+        }
+
+        /* For screens smaller than 768px (e.g., typical smartphones) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Smaller base font size */
+        }
+
+    #banner-tag {
+        font-size: 40px; /* Even smaller font for banner tag */
+        height: 120px;
+        box-shadow: 5px 5px #f15050; /* Smaller shadow */
+        }
+
+    .banner-image {
+        height: 100px;
+        box-shadow: 5px 5px #cc5f95; /* Smaller shadow */
+        }
+
+    #navigation-bar {
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 5px 5px #cc5f95;
+        }
+
+    .navigation-bar-button {
+        font-size: 14px; /* Smaller button font */
+        padding: 6px 10px;
+        }
+
+    #search-bar input, #search-bar button {
+        font-size: 14px;
+        padding: 6px;
+        }
+
+    #content {
+        margin: 5px;
+        }
+
+    #profile {
+        width: 98%; /* Take almost full width */
+        padding: 10px;
+        flex-direction: column; /* Stack image and text vertically again */
+        align-items: center;
+        text-align: center;
+        }
+
+    #profile-image {
+        width: 70px; /* Smaller image */
+        height: 70px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        }
+
+    #profile-things {
+        align-items: center; /* Center text */
+        text-align: center;
+    }
+
+    #main-content {
+        font-size: 18px; /* Slightly smaller font for main content */
+        padding: 15px;
+        margin: 5px auto;
+        }
+
+    .introduction {
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px auto;
+        }
+
+    #side-panel {
+        padding: 10px;
+        margin: 5px auto;
+        }
+
+    .side-panel-button {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin: 6px 0;
+            }
+        }
+
+        /* For very small screens (e.g., iPhone SE) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            #banner-tag {
+                font-size: 30px;
+                height: 100px;
+            }
+
+            .banner-image {
+                height: 80px;
+            }
+
+            .navigation-bar-button, #search-bar input, #search-bar button, .side-panel-button {
+                font-size: 12px;
+                padding: 5px 8px;
+            }
+
+            #main-content {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .introduction {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            #profile-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
