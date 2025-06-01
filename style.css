@@ -100,20 +100,86 @@ body{
     flex-wrap:wrap;
 }
 @media (max-width: 768px) {
-  #introduction-container {
-    flex-direction: column; /* Stack items vertically */
-    flex-wrap: wrap; /* Ensure items wrap if they can't fit */
-    /* You might want to adjust other properties for mobile */
-    gap: 10px; /* Adjust gap for vertical stacking */
-    padding: 8px; margin: 10px;
-  }
+            body {
+                font-size: 16px; /* Smaller base font size */
+            }
 
-  .introduction {
-    width: 100%; /* Make items take full width on mobile */
-    min-width: unset; /* Remove min-width restriction */
-    padding: 8px; margin: 10px;
-  }
-}
+            #banner-tag {
+                font-size: 40px; /* Even smaller font for banner tag */
+                height: 120px;
+                box-shadow: 5px 5px #f15050; /* Smaller shadow */
+            }
+
+            .banner-image {
+                height: 100px;
+                box-shadow: 5px 5px #cc5f95; /* Smaller shadow */
+            }
+
+            #navigation-bar {
+                padding: 5px;
+                margin: 5px;
+                box-shadow: 5px 5px #cc5f95;
+            }
+
+            .navigation-bar-button {
+                font-size: 14px; /* Smaller button font */
+                padding: 6px 10px;
+            }
+
+            #search-bar input, #search-bar button {
+                font-size: 14px;
+                padding: 6px;
+            }
+
+            #content {
+                margin: 5px;
+            }
+
+            #profile {
+                width: 98%; /* Take almost full width */
+                padding: 10px;
+                flex-direction: column; /* Stack image and text vertically again */
+                align-items: center;
+                text-align: center;
+            }
+
+            #profile-image {
+                width: 70px; /* Smaller image */
+                height: 70px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            #profile-things {
+                align-items: center; /* Center text */
+                text-align: center;
+            }
+
+            #main-content {
+                font-size: 18px; /* Slightly smaller font for main content */
+                padding: 15px;
+                margin: 5px auto;
+            }
+
+            .introduction {
+                font-size: 16px;
+                padding: 10px;
+                margin: 5px auto;
+            }
+
+            #side-panel {
+                padding: 10px;
+                margin: 5px auto;
+            }
+
+            .side-panel-button {
+                font-size: 14px;
+                padding: 8px 10px;
+                margin: 6px 0;
+            }
+        }
+
+    
 #side-panel{
     background-image: linear-gradient(#ea8d8d, #a890fe);
     font-family:quicksand;
@@ -121,7 +187,6 @@ body{
     padding: 8px; margin: 10px;
     border: solid 0cm; border-radius: 1rem;
 }
-
 .side-panel-button{
     background-color: #FFFFFF;
     font-family:quicksand;
