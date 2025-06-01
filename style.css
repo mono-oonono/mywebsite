@@ -110,6 +110,7 @@ body{
   .introduction {
     width: 100%; /* Make items take full width on mobile */
     min-width: unset; /* Remove min-width restriction */
+    padding: 8px; margin: 10px;
   }
 }
 #side-panel{
