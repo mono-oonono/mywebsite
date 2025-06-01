@@ -98,9 +98,20 @@ body{
     border: solid 0cm; border-radius: 1rem;
     flex:1;
     flex-wrap:wrap;
-
 }
+@media (max-width: 768px) {
+  .introduction-container {
+    flex-direction: column; /* Stack items vertically */
+    flex-wrap: wrap; /* Ensure items wrap if they can't fit */
+    /* You might want to adjust other properties for mobile */
+    gap: 10px; /* Adjust gap for vertical stacking */
+  }
 
+  .introduction {
+    width: 100%; /* Make items take full width on mobile */
+    min-width: unset; /* Remove min-width restriction */
+  }
+}
 #side-panel{
     background-image: linear-gradient(#ea8d8d, #a890fe);
     font-family:quicksand;
