@@ -100,7 +100,7 @@ body{
     flex-wrap:wrap;
 }
 @media (max-width: 768px) {
-  .introduction-container {
+  #introduction-container {
     flex-direction: column; /* Stack items vertically */
     flex-wrap: wrap; /* Ensure items wrap if they can't fit */
     /* You might want to adjust other properties for mobile */
