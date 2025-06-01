@@ -96,6 +96,7 @@ body{
     padding: 8px; margin: 10px;
     border: solid 0cm; border-radius: 1rem;
     flex:1;
+    flex-wrap:wrap;
 
 }
 
